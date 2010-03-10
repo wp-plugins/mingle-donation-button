@@ -3,7 +3,7 @@
 Plugin Name: Mingle Donation Button
 Plugin URI: http://blairwilliams.com/mingle
 Description: Enables your mingle users to add a paypal donation button to their profile page...
-Version: 0.0.01
+Version: 0.0.02
 Author: Blair Williams
 Author URI: http://blairwilliams.com
 Text Domain: mingle

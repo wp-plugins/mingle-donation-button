@@ -4,7 +4,7 @@ Donate link: http://wpmingle.com/supercleanse
 Tags: paypal, donation, donate, social network, mingle, profile
 Requires at least: 2.8
 Tested up to: 2.9.2
-Stable tag: 0.0.01
+Stable tag: 0.0.02
 
 Enables your mingle users to add a paypal donation button to their profile pages...
 
