@@ -78,7 +78,7 @@ if(is_plugin_active('mingle/mingle.php'))
 
       ?>
       <tr>
-        <td valign="top"><?php _e('PayPal Email Address (a donation button will appear on your profile if this is set)'); ?>:</td>
+        <td valign="top"><?php _e('PayPal Email'); ?>:</td>
         <td valign="top"><input type="text" name="mngldonatebutton_paypal_email" id="mngldonatebutton_paypal_email" value="<?php echo $paypal_email; ?>" class="mngl-profile-edit-field" /></td>
       </tr>
       <?php
@@ -87,6 +87,7 @@ if(is_plugin_active('mingle/mingle.php'))
     function validate_profile_fields($errors)
     {
       if( isset($_POST['mngldonatebutton_paypal_email']) and
+          !empty($_POST['mngldonatebutton_paypal_email']) and
           !is_email($_POST['mngldonatebutton_paypal_email']) )
         $errors[] = __('PayPal Email must be a real and properly formatted email address','mingle');
       
@@ -95,7 +96,7 @@ if(is_plugin_active('mingle/mingle.php'))
     
     function process_profile_fields($user_id)
     {
-      if(isset($_POST['mngldonatebutton_paypal_email']) and !empty($_POST['mngldonatebutton_paypal_email']))
+      if(isset($_POST['mngldonatebutton_paypal_email']))
         update_usermeta($user_id, 'mngldonatebutton_paypal_email', $_POST['mngldonatebutton_paypal_email']);
     }
   }

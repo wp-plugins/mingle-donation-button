@@ -32,10 +32,16 @@ If you have any issues please leave a comment here:
 
 == Changelog ==
 
+= 0.0.02 =
+* Fixed profile update issue
+
 = 0.0.01 =
 * First Release
 
 == Upgrade Notice ==
+
+= 0.0.02 =
+* Profile update issue has been fixed...
 
 = 0.0.01 =
 * First Release
